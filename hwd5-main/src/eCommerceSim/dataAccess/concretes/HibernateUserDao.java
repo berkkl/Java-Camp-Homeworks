@@ -30,19 +30,15 @@ public class HibernateUserDao implements UserDao {
 
     @Override
     public void login(User user) {
-        System.out.println(user.getFirstName()+" "+user.getLastName() + " adli kullanici sisteme giris yapti.");
+
     }
 
     @Override
     public void deleteUser(User user) {
         users.remove(user);
-        System.out.println(user.getFirstName()+" "+user.getLastName() + " adli kullanici sistemden silindi.");
     }
-
     @Override
     public void updateUser(User user) {
-        System.out.println(user.getFirstName()+" "+user.getLastName() + " adli kullanicinin bilgileri guncellendi.");
-
     }
 
     @Override
@@ -76,20 +72,10 @@ public class HibernateUserDao implements UserDao {
         return null;
     }
 
-    @Override
-    public User getNameCheck(String firstName, String lastName) {
-        for (User user : users) {
-            if (user.getFirstName() == null || user.getLastName() == null) {
-                return user;
-            }
-        }
-        return null;
-    }
-
-
 
     @Override
     public ArrayList<User> getAll() {
         return (ArrayList<User>) users;
     }
+
 }

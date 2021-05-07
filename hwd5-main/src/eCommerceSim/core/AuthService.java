@@ -1,4 +1,6 @@
 package eCommerceSim.core;
 
-public class AuthService {
-}
+public interface AuthService {
+    void authenticate(String message);
+    }
+

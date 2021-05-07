@@ -21,7 +21,8 @@ public class User implements Entity {
         this.setLastName(lastName);
         this.setMail(mail);
         this.setPassword(password);
-        this.setVerified(verified);
+        this.setVerified((verified));
+
     }
 
 

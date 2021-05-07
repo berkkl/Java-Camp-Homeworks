@@ -13,7 +13,5 @@ public interface UserDao {
     User getById(int id);
     User getByMail(String mail);
     User getByPassword(String password);
-    User getNameCheck(String firstName, String lastName);
     List<User> getAll();
-
 }
