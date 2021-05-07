@@ -22,7 +22,7 @@ public class Main {
         kaan.setId(4);
         kaan.setFirstName("Kaan");
         kaan.setMail("ka3@gmail.com");
-        kaan.setPassword("amcikkaan53");
+        kaan.setPassword("kaan5325");
         kaan.setVerified(true);
         userService.register(kaan);
     }
